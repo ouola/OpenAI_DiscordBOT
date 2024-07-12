@@ -71,3 +71,8 @@ async def h(ctx):
 
 # Replace 'YOUR_BOT_TOKEN' with your actual bot token
 bot.run(Discord_token)
+
+import os
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 5000))
+    discordAIchatbot.run(host='0.0.0.0', port=port)
